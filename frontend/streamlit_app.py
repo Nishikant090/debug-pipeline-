@@ -242,12 +242,12 @@ elif page == "📡 Live Monitor":
             st.caption("Enter the absolute path to your JSON log file:")
             log_path_input = st.text_input(
                 "JSON log file path",
-                value=r"C:\Users\naman\Downloads\debug_pipeline\test_logs\live.log",
+                value="test_logs/live.log",
                 label_visibility="collapsed",
             )
             st.caption(
                 "**Test file:**  "
-                r"`C:\Users\naman\Downloads\debug_pipeline\test_logs\live.log`  "
+                "`test_logs/live.log`  "
                 "— generate it first using **🧪 Log Generator**"
             )
             payload = {"monitor_type": "log", "log_path": log_path_input}
@@ -552,7 +552,7 @@ elif page == "🧪 Log Generator":
 
         out_path = st.text_input(
             "Output log file path",
-            value=r"C:\Users\naman\Downloads\debug_pipeline\test_logs\live.log",
+            value="test_logs/live.log",
             help="File is APPENDED to if it already exists.",
         )
 
